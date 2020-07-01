@@ -1,0 +1,41 @@
+{
+    "title": "loja do porcelanato",
+    "name": "",
+    "version": "4.2.2",
+    "scripts": {
+        "start": "node_modules/.bin/gulp watch"
+    },
+    "description": "Loja de porcelanato",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "",
+    "bugs": {
+        "url": "",
+        "email": ""
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "()"
+    ],
+    "repository": {
+        "type": "",
+        "url": ""
+    },
+    "dependencies": {
+        "bootstrap": "4.5.0",
+        "jquery": "3.5.1"
+    },
+    "devDependencies": {
+        "browser-sync": "2.26.7",
+        "del": "5.1.0",
+        "gulp": "4.0.2",
+        "merge-stream": "2.0.0"
+    }
+}

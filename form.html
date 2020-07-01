@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+    <title>Preencha seu formulário</title>
+</head>
+
+
+<body>
+    <form>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationServer01">Primeiro nome</label>
+                <input type="text" class="form-control " id="validationServer01" placeholder="Nome" value="" required autofocus pattern="[A-Za-z- ']{4,}">
+                <div class="valid-feedback">
+
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationServer02">Sobrenome</label>
+                <input type="text" class="form-control " id="validationServer02" placeholder="Sobrenome" value="" required autofocus pattern="[A-Za-z- ']{4,}">
+                <div class="valid-feedback">
+
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label>Usuário</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend3"></span>
+                    </div>
+                    <input type="text" class="form-control " id="validationServerUsername" placeholder="Usuário" aria-describedby="inputGroupPrepend3" required autofocus pattern="[A-Za-z- ']{4,}">
+                    <div class="invalid-feedback">
+                        Por favor, escolha um nome de usuário.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationServer03">Cidade</label>
+                <input type="text" class="form-control " id="validationServer03" placeholder="Cidade" required autofocus pattern="[A-Za-z- ']{4,}">
+                <div class="valid-feedback">
+
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+
+                <label for="validationServer04">Estado</label>
+                <input type="text" class="form-control " id="validationServer04" placeholder="Estado" required autofocus pattern="[1-100000-z-'{4,">
+                <div class="valid-feedback">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationServer05">CEP</label>
+                <input type="text" class="form-control " id="validationServer05" placeholder="CEP" required>
+                <div class="invalid-feedback">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                <label class="form-check-label" for="validCheck3">
+              Concordo com os termos e condições
+            </label>
+                <div class="invalid-feedback">
+                    Você deve concordar, antes de continuar.
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+            <label class="form-check-label" for="gridCheck">
+              Click para receber nossas propostas.
+            </label>
+        </div>
+    </div>
+    </form>
+
+    <button onclick="document.getElementById('id01').style.display='block'">Confirmar</button>
+    <a href="index.html"> <button type="button" class="btn btn-secondary btn-lg btn-block">Voltar a pagina inicial</button></a>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='block'" class="close" title="">&times;</span>
+
+        <form class="modal-content" action="#" method="POST">
+            <h1>Deseja continuar </h1>
+            </a>
+            <p>Você deseja continuar para poder receber nossos e-mail?</p>
+            <div class="clearfix">
+                <a href="form.html"><button type="button" class="btn btn-secondary btn-lg btn-danger">clique aqui para retornar</button></a>
+                <a href="index.html"><button type="button" class="navbar-dark">Continuar</button></a>
+            </div>
+
+        </form>
+    </div>
+    <div>
+        <div>
+            <footer class="py-5 bg-dark">
+
+                <p class="m-2 text-center text-white"> Copyright &copy; Casa do porcelanato 2020</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
